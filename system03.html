@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="IMG/icon.png">
+	<link rel="stylesheet" type="text/css" href="CSS/system01.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>iMirror | 系統畫面展示</title>
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+		.text-block{
+			background-color: rgba(138, 161, 144 ,0.7);
+		}
+		.text-block p, h3{color: #EAEAEA;}
+	</style>
+</head>
+<body>
+	<div id="navbar">
+		<a class="active" href="index.html" id="logo">iMirror</a>
+		<div id="navbar-right">
+			<a id="nav01" href="team.html" >組員資料</a>
+			<a id="nav02" href="system01.html">展示-起始頁面</a>
+			<a id="nav03" href="system02.html">展示-面徵健檢分析鏡</a>
+			<a id="nav04" href="system03.html">展示-其他功能</a>
+		</div>
+	</div>
+	
+	<div id="bgimg" style="background-image: url('IMG/img5.jpg');">
+		<span id="bgimg_text" style="color: #696969;">iMirror系統畫面展示</span>
+	</div>
+
+
+	
+	<div id="content">
+		<div class="row">
+			<h2>其他功能</h2>
+			<div class="column">
+				<img src="IMG/6-1.png"  style="width:70%;">
+				<div class="text-block">
+					<h3>面相微算智能鏡</h3>
+				    <p>面相分析畫面，顯示結果評斷及建議。</p>
+				</div>
+			</div>
+			<div class="column">
+				<img src="IMG/7.png"  style="width:70%;">
+				<div class="text-block">
+					<h3>美髮彩妝透試鏡</h3>
+				    <p>AR套用畫面，含遮罩選項及分類，點擊連結可移至商品頁面。</p>
+				</div>
+			</div>
+			<div class="column">
+				<img src="IMG/7-1.png"  style="width:70%;">
+				<div class="text-block">
+					<h3>配件飾品體驗鏡</h3>
+				    <p>AR套用畫面，含配件選項及分類，點擊連結可移至商品頁面。</p>
+				</div>
+			</div>
+			<div class="column">
+				<img src="IMG/8.png"  style="width:70%;">
+				<div class="text-block">
+					<h3>電商精準導購鏡</h3>
+				    <p>電商導購首頁，依使用者行為足跡及分析結果等，推薦使用者個人化最適產品。</p>
+				</div>
+			</div>
+			<div class="column">
+				<img src="IMG/8-1.png"  style="width:70%;">
+				<div class="text-block">
+					<h3>宅家運動擴增鏡</h3>
+				    <p>遊戲畫面，進行運動舒活。</p>
+				</div>
+			</div>
+			<div class="column">
+				<img src="IMG/9.png"  style="width:70%;">
+				<div class="text-block">
+					<h3>兒童潔牙遊戲鏡</h3>
+				    <p>遊戲畫面，進行刷牙打怪。</p>
+				</div>
+			</div>
+			<div class="column">
+				<img src="IMG/9-1.png"  style="width:70%;">
+				<div class="text-block">
+					<h3>雲端約會互動鏡</h3>
+				    <p>視訊畫面，可選擇先前儲存的造型套用，一鍵定妝。</p>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+
+	<div id="footer">
+		<div class="row0">
+			<div class="column0 footer-content">
+				<h3>iMirror導覽</h3>
+				<a href="index.html">— 首頁</a><br>
+				<a href="team.html">— 組員資料</a><br>
+				<a href="system01.html">— 展示-起始頁面</a><br>
+				<a href="system02.html">— 展示-面徵健檢分析鏡</a><br>
+				<a href="system03.html">— 展示-其他功能</a>
+			</div>
+			<div class="column0 footer-address">
+				<h3>聯絡資訊</h3>
+				桃園市中壢區中北路200號 200, Chung Pei Rd, Chung Li,Taiwan 32023, R.O.C<br>
+				+886 3 265 9999
+			</div>
+			<div class="column0 footer-content">
+				<h3>相關連結</h3>
+				<a href="https://www1.cycu.edu.tw/" target="_blank">— 中原大學</a><br>
+				<a href="https://im.cycu.edu.tw/" target="_blank">— 中原大學資訊管理系</a><br>
+				<a href="https://www.youtube.com/channel/UCxQ0nN1wU3zTPLN0tuPM0uQ" target="_blank">— 某個怡君</a>
+		</div>
+	</div>
+
+	<!--  返回上面的按鈕  -->
+	<a class="BackTop_a" href="#top">
+		<img id="BackTop" src="IMG/Top.png" width="10%" style="position: fixed;bottom: 20px;right: 20px;z-index: 99;">
+	</a>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	$(function(){
+		$('#BackTop').click(function(){ 
+			$('html,body').animate({scrollTop:0}, 333); //0.333秒完成捲動到網頁最上方
+		});
+		$(window).scroll(function() {
+			if ( $(this).scrollTop() > 80 ){ //距離網頁頂端是否超過 80 px
+				document.getElementById("navbar").style.padding = "25px 25px";
+				document.getElementById("navbar").style.background = "rgba(255,255,255,0.8)";
+				document.getElementById("logo").style.color = "#262F40";
+				document.getElementById("nav01").style.color = "#262F40";
+				document.getElementById("nav02").style.color = "#262F40";
+				document.getElementById("nav03").style.color = "#262F40";
+				document.getElementById("nav04").style.color = "#262F40";
+				document.getElementById("logo").style.fontSize = "25px";
+			} else {
+				document.getElementById("navbar").style.padding = "65px 25px";
+				document.getElementById("navbar").style.background = "rgba(255,255,255,0)";
+				document.getElementById("logo").style.color = "white";
+				document.getElementById("nav01").style.color = "white";
+				document.getElementById("nav02").style.color = "white";
+				document.getElementById("nav03").style.color = "white";
+				document.getElementById("nav04").style.color = "white";
+				document.getElementById("logo").style.fontSize = "35px";
+			}
+			if ( $(this).scrollTop() > 1000 ){
+				$('#BackTop').fadeIn(222);
+			} else {
+				$('#BackTop').stop().fadeOut(222);
+			}
+		}).scroll();
+	});
+
+	
+	
+	</script>
+
+
+	
+</body>
+</html>
